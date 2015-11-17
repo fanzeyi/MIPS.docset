@@ -1,0 +1,2903 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Basic Instructions &mdash; MIPS Instructions Manual</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="MIPS Instructions Manual" href="../index.html" />
+    <link rel="up" title="Instructions" href="../instructions.html" />
+    <link rel="next" title="Pseudo Instructions" href="pseudo.html" />
+    <link rel="prev" title="Instructions" href="../instructions.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="basic-instructions">
+<h1>Basic Instructions<a class="headerlink" href="#basic-instructions" title="Permalink to this headline">¶</a></h1>
+<dl class="instructions">
+<dt id="mips.abs.d.$f2.$f4">
+<tt class="descname">abs.d</tt><big>(</big><em>$f2</em>, <em>$f4</em><big>)</big><a class="headerlink" href="#mips.abs.d.$f2.$f4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Floating point absolute value double precision : Set $f2 to absolute value of $f4, double precision</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f2</strong> &#8211; Parameter 0</li>
+<li><strong>$f4</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.abs.s.$f0.$f1">
+<tt class="descname">abs.s</tt><big>(</big><em>$f0</em>, <em>$f1</em><big>)</big><a class="headerlink" href="#mips.abs.s.$f0.$f1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Floating point absolute value single precision : Set $f0 to absolute value of $f1, single precision</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f0</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.add.$t1.$t2.$t3">
+<tt class="descname">add</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>$t3</em><big>)</big><a class="headerlink" href="#mips.add.$t1.$t2.$t3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Addition with overflow : set $t1 to ($t2 plus $t3)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>$t3</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.add.d.$f2.$f4.$f6">
+<tt class="descname">add.d</tt><big>(</big><em>$f2</em>, <em>$f4</em>, <em>$f6</em><big>)</big><a class="headerlink" href="#mips.add.d.$f2.$f4.$f6" title="Permalink to this definition">¶</a></dt>
+<dd><p>Floating point addition double precision : Set $f2 to double-precision floating point value of $f4 plus $f6</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f2</strong> &#8211; Parameter 0</li>
+<li><strong>$f4</strong> &#8211; Parameter 1</li>
+<li><strong>$f6</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.add.s.$f0.$f1.$f3">
+<tt class="descname">add.s</tt><big>(</big><em>$f0</em>, <em>$f1</em>, <em>$f3</em><big>)</big><a class="headerlink" href="#mips.add.s.$f0.$f1.$f3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Floating point addition single precision : Set $f0 to single-precision floating point value of $f1 plus $f3</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f0</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+<li><strong>$f3</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.addi.$t1.$t2.-100">
+<tt class="descname">addi</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>-100</em><big>)</big><a class="headerlink" href="#mips.addi.$t1.$t2.-100" title="Permalink to this definition">¶</a></dt>
+<dd><p>Addition immediate with overflow : set $t1 to ($t2 plus signed 16-bit immediate)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>-100</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.addiu.$t1.$t2.-100">
+<tt class="descname">addiu</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>-100</em><big>)</big><a class="headerlink" href="#mips.addiu.$t1.$t2.-100" title="Permalink to this definition">¶</a></dt>
+<dd><p>Addition immediate unsigned without overflow : set $t1 to ($t2 plus signed 16-bit immediate), no overflow</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>-100</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.addu.$t1.$t2.$t3">
+<tt class="descname">addu</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>$t3</em><big>)</big><a class="headerlink" href="#mips.addu.$t1.$t2.$t3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Addition unsigned without overflow : set $t1 to ($t2 plus $t3), no overflow</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>$t3</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.and.$t1.$t2.$t3">
+<tt class="descname">and</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>$t3</em><big>)</big><a class="headerlink" href="#mips.and.$t1.$t2.$t3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bitwise AND : Set $t1 to bitwise AND of $t2 and $t3</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>$t3</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.andi.$t1.$t2.100">
+<tt class="descname">andi</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>100</em><big>)</big><a class="headerlink" href="#mips.andi.$t1.$t2.100" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bitwise AND immediate : Set $t1 to bitwise AND of $t2 and zero-extended 16-bit immediate</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>100</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.bc1f.1.label">
+<tt class="descname">bc1f</tt><big>(</big><em>1</em>, <em>label</em><big>)</big><a class="headerlink" href="#mips.bc1f.1.label" title="Permalink to this definition">¶</a></dt>
+<dd><p>Branch if specified FP condition flag false (BC1F, not BCLF) : If Coprocessor 1 condition flag specified by immediate is false (zero) then branch to statement at label&#8217;s address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>1</strong> &#8211; Parameter 0</li>
+<li><strong>label</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.bc1f.label">
+<tt class="descname">bc1f</tt><big>(</big><em>label</em><big>)</big><a class="headerlink" href="#mips.bc1f.label" title="Permalink to this definition">¶</a></dt>
+<dd><p>Branch if FP condition flag 0 false (BC1F, not BCLF) : If Coprocessor 1 condition flag 0 is false (zero) then branch to statement at label&#8217;s address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>label</strong> &#8211; Parameter 0</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.bc1t.1.label">
+<tt class="descname">bc1t</tt><big>(</big><em>1</em>, <em>label</em><big>)</big><a class="headerlink" href="#mips.bc1t.1.label" title="Permalink to this definition">¶</a></dt>
+<dd><p>Branch if specified FP condition flag true (BC1T, not BCLT) : If Coprocessor 1 condition flag specified by immediate is true (one) then branch to statement at label&#8217;s address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>1</strong> &#8211; Parameter 0</li>
+<li><strong>label</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.bc1t.label">
+<tt class="descname">bc1t</tt><big>(</big><em>label</em><big>)</big><a class="headerlink" href="#mips.bc1t.label" title="Permalink to this definition">¶</a></dt>
+<dd><p>Branch if FP condition flag 0 true (BC1T, not BCLT) : If Coprocessor 1 condition flag 0 is true (one) then branch to statement at label&#8217;s address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>label</strong> &#8211; Parameter 0</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.beq.$t1.$t2.label">
+<tt class="descname">beq</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>label</em><big>)</big><a class="headerlink" href="#mips.beq.$t1.$t2.label" title="Permalink to this definition">¶</a></dt>
+<dd><p>Branch if equal : Branch to statement at label&#8217;s address if $t1 and $t2 are equal</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>label</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.bgez.$t1.label">
+<tt class="descname">bgez</tt><big>(</big><em>$t1</em>, <em>label</em><big>)</big><a class="headerlink" href="#mips.bgez.$t1.label" title="Permalink to this definition">¶</a></dt>
+<dd><p>Branch if greater than or equal to zero : Branch to statement at label&#8217;s address if $t1 is greater than or equal to zero</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>label</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.bgezal.$t1.label">
+<tt class="descname">bgezal</tt><big>(</big><em>$t1</em>, <em>label</em><big>)</big><a class="headerlink" href="#mips.bgezal.$t1.label" title="Permalink to this definition">¶</a></dt>
+<dd><p>Branch if greater then or equal to zero and link : If $t1 is greater than or equal to zero, then set $ra to the Program Counter and branch to statement at label&#8217;s address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>label</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.bgtz.$t1.label">
+<tt class="descname">bgtz</tt><big>(</big><em>$t1</em>, <em>label</em><big>)</big><a class="headerlink" href="#mips.bgtz.$t1.label" title="Permalink to this definition">¶</a></dt>
+<dd><p>Branch if greater than zero : Branch to statement at label&#8217;s address if $t1 is greater than zero</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>label</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.blez.$t1.label">
+<tt class="descname">blez</tt><big>(</big><em>$t1</em>, <em>label</em><big>)</big><a class="headerlink" href="#mips.blez.$t1.label" title="Permalink to this definition">¶</a></dt>
+<dd><p>Branch if less than or equal to zero : Branch to statement at label&#8217;s address if $t1 is less than or equal to zero</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>label</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.bltz.$t1.label">
+<tt class="descname">bltz</tt><big>(</big><em>$t1</em>, <em>label</em><big>)</big><a class="headerlink" href="#mips.bltz.$t1.label" title="Permalink to this definition">¶</a></dt>
+<dd><p>Branch if less than zero : Branch to statement at label&#8217;s address if $t1 is less than zero</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>label</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.bltzal.$t1.label">
+<tt class="descname">bltzal</tt><big>(</big><em>$t1</em>, <em>label</em><big>)</big><a class="headerlink" href="#mips.bltzal.$t1.label" title="Permalink to this definition">¶</a></dt>
+<dd><p>Branch if less than zero and link : If $t1 is less than or equal to zero, then set $ra to the Program Counter and branch to statement at label&#8217;s address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>label</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.bne.$t1.$t2.label">
+<tt class="descname">bne</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>label</em><big>)</big><a class="headerlink" href="#mips.bne.$t1.$t2.label" title="Permalink to this definition">¶</a></dt>
+<dd><p>Branch if not equal : Branch to statement at label&#8217;s address if $t1 and $t2 are not equal</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>label</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.break">
+<tt class="descname">break</tt><a class="headerlink" href="#mips.break" title="Permalink to this definition">¶</a></dt>
+<dd><p>Break execution : Terminate program execution with exception</p>
+<p>:param : Parameter 0</p>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.break.100">
+<tt class="descname">break</tt><big>(</big><em>100</em><big>)</big><a class="headerlink" href="#mips.break.100" title="Permalink to this definition">¶</a></dt>
+<dd><p>Break execution with code : Terminate program execution with specified exception code</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>100</strong> &#8211; Parameter 0</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.c.eq.d.$f2.$f4">
+<tt class="descname">c.eq.d</tt><big>(</big><em>$f2</em>, <em>$f4</em><big>)</big><a class="headerlink" href="#mips.c.eq.d.$f2.$f4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compare equal double precision : If $f2 is equal to $f4 (double-precision), set Coprocessor 1 condition flag 0 true else set it false</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f2</strong> &#8211; Parameter 0</li>
+<li><strong>$f4</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.c.eq.d.1.$f2.$f4">
+<tt class="descname">c.eq.d</tt><big>(</big><em>1</em>, <em>$f2</em>, <em>$f4</em><big>)</big><a class="headerlink" href="#mips.c.eq.d.1.$f2.$f4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compare equal double precision : If $f2 is equal to $f4 (double-precision), set Coprocessor 1 condition flag specified by immediate to true else set it to false</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>1</strong> &#8211; Parameter 0</li>
+<li><strong>$f2</strong> &#8211; Parameter 1</li>
+<li><strong>$f4</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.c.eq.s.$f0.$f1">
+<tt class="descname">c.eq.s</tt><big>(</big><em>$f0</em>, <em>$f1</em><big>)</big><a class="headerlink" href="#mips.c.eq.s.$f0.$f1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compare equal single precision : If $f0 is equal to $f1, set Coprocessor 1 condition flag 0 true else set it false</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f0</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.c.eq.s.1.$f0.$f1">
+<tt class="descname">c.eq.s</tt><big>(</big><em>1</em>, <em>$f0</em>, <em>$f1</em><big>)</big><a class="headerlink" href="#mips.c.eq.s.1.$f0.$f1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compare equal single precision : If $f0 is equal to $f1, set Coprocessor 1 condition flag specied by immediate to true else set it to false</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>1</strong> &#8211; Parameter 0</li>
+<li><strong>$f0</strong> &#8211; Parameter 1</li>
+<li><strong>$f1</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.c.le.d.$f2.$f4">
+<tt class="descname">c.le.d</tt><big>(</big><em>$f2</em>, <em>$f4</em><big>)</big><a class="headerlink" href="#mips.c.le.d.$f2.$f4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compare less or equal double precision : If $f2 is less than or equal to $f4 (double-precision), set Coprocessor 1 condition flag 0 true else set it false</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f2</strong> &#8211; Parameter 0</li>
+<li><strong>$f4</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.c.le.d.1.$f2.$f4">
+<tt class="descname">c.le.d</tt><big>(</big><em>1</em>, <em>$f2</em>, <em>$f4</em><big>)</big><a class="headerlink" href="#mips.c.le.d.1.$f2.$f4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compare less or equal double precision : If $f2 is less than or equal to $f4 (double-precision), set Coprocessor 1 condition flag specfied by immediate true else set it false</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>1</strong> &#8211; Parameter 0</li>
+<li><strong>$f2</strong> &#8211; Parameter 1</li>
+<li><strong>$f4</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.c.le.s.$f0.$f1">
+<tt class="descname">c.le.s</tt><big>(</big><em>$f0</em>, <em>$f1</em><big>)</big><a class="headerlink" href="#mips.c.le.s.$f0.$f1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compare less or equal single precision : If $f0 is less than or equal to $f1, set Coprocessor 1 condition flag 0 true else set it false</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f0</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.c.le.s.1.$f0.$f1">
+<tt class="descname">c.le.s</tt><big>(</big><em>1</em>, <em>$f0</em>, <em>$f1</em><big>)</big><a class="headerlink" href="#mips.c.le.s.1.$f0.$f1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compare less or equal single precision : If $f0 is less than or equal to $f1, set Coprocessor 1 condition flag specified by immediate to true else set it to false</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>1</strong> &#8211; Parameter 0</li>
+<li><strong>$f0</strong> &#8211; Parameter 1</li>
+<li><strong>$f1</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.c.lt.d.$f2.$f4">
+<tt class="descname">c.lt.d</tt><big>(</big><em>$f2</em>, <em>$f4</em><big>)</big><a class="headerlink" href="#mips.c.lt.d.$f2.$f4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compare less than double precision : If $f2 is less than $f4 (double-precision), set Coprocessor 1 condition flag 0 true else set it false</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f2</strong> &#8211; Parameter 0</li>
+<li><strong>$f4</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.c.lt.d.1.$f2.$f4">
+<tt class="descname">c.lt.d</tt><big>(</big><em>1</em>, <em>$f2</em>, <em>$f4</em><big>)</big><a class="headerlink" href="#mips.c.lt.d.1.$f2.$f4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compare less than double precision : If $f2 is less than $f4 (double-precision), set Coprocessor 1 condition flag specified by immediate to true else set it to false</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>1</strong> &#8211; Parameter 0</li>
+<li><strong>$f2</strong> &#8211; Parameter 1</li>
+<li><strong>$f4</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.c.lt.s.$f0.$f1">
+<tt class="descname">c.lt.s</tt><big>(</big><em>$f0</em>, <em>$f1</em><big>)</big><a class="headerlink" href="#mips.c.lt.s.$f0.$f1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compare less than single precision : If $f0 is less than $f1, set Coprocessor 1 condition flag 0 true else set it false</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f0</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.c.lt.s.1.$f0.$f1">
+<tt class="descname">c.lt.s</tt><big>(</big><em>1</em>, <em>$f0</em>, <em>$f1</em><big>)</big><a class="headerlink" href="#mips.c.lt.s.1.$f0.$f1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compare less than single precision : If $f0 is less than $f1, set Coprocessor 1 condition flag specified by immediate to true else set it to false</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>1</strong> &#8211; Parameter 0</li>
+<li><strong>$f0</strong> &#8211; Parameter 1</li>
+<li><strong>$f1</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.ceil.w.d.$f1.$f2">
+<tt class="descname">ceil.w.d</tt><big>(</big><em>$f1</em>, <em>$f2</em><big>)</big><a class="headerlink" href="#mips.ceil.w.d.$f1.$f2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ceiling double precision to word : Set $f1 to 32-bit integer ceiling of double-precision float in $f2</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f1</strong> &#8211; Parameter 0</li>
+<li><strong>$f2</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.ceil.w.s.$f0.$f1">
+<tt class="descname">ceil.w.s</tt><big>(</big><em>$f0</em>, <em>$f1</em><big>)</big><a class="headerlink" href="#mips.ceil.w.s.$f0.$f1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ceiling single precision to word : Set $f0 to 32-bit integer ceiling of single-precision float in $f1</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f0</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.clo.$t1.$t2">
+<tt class="descname">clo</tt><big>(</big><em>$t1</em>, <em>$t2</em><big>)</big><a class="headerlink" href="#mips.clo.$t1.$t2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Count number of leading ones : Set $t1 to the count of leading one bits in $t2 starting at most significant bit position</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.clz.$t1.$t2">
+<tt class="descname">clz</tt><big>(</big><em>$t1</em>, <em>$t2</em><big>)</big><a class="headerlink" href="#mips.clz.$t1.$t2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Count number of leading zeroes : Set $t1 to the count of leading zero bits in $t2 starting at most significant bit positio</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.cvt.d.s.$f2.$f1">
+<tt class="descname">cvt.d.s</tt><big>(</big><em>$f2</em>, <em>$f1</em><big>)</big><a class="headerlink" href="#mips.cvt.d.s.$f2.$f1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert from single precision to double precision : Set $f2 to double precision equivalent of single precision value in $f1</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f2</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.cvt.d.w.$f2.$f1">
+<tt class="descname">cvt.d.w</tt><big>(</big><em>$f2</em>, <em>$f1</em><big>)</big><a class="headerlink" href="#mips.cvt.d.w.$f2.$f1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert from word to double precision : Set $f2 to double precision equivalent of 32-bit integer value in $f1</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f2</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.cvt.s.d.$f1.$f2">
+<tt class="descname">cvt.s.d</tt><big>(</big><em>$f1</em>, <em>$f2</em><big>)</big><a class="headerlink" href="#mips.cvt.s.d.$f1.$f2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert from double precision to single precision : Set $f1 to single precision equivalent of double precision value in $f2</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f1</strong> &#8211; Parameter 0</li>
+<li><strong>$f2</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.cvt.s.w.$f0.$f1">
+<tt class="descname">cvt.s.w</tt><big>(</big><em>$f0</em>, <em>$f1</em><big>)</big><a class="headerlink" href="#mips.cvt.s.w.$f0.$f1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert from word to single precision : Set $f0 to single precision equivalent of 32-bit integer value in $f2</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f0</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.cvt.w.d.$f1.$f2">
+<tt class="descname">cvt.w.d</tt><big>(</big><em>$f1</em>, <em>$f2</em><big>)</big><a class="headerlink" href="#mips.cvt.w.d.$f1.$f2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert from double precision to word : Set $f1 to 32-bit integer equivalent of double precision value in $f2</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f1</strong> &#8211; Parameter 0</li>
+<li><strong>$f2</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.cvt.w.s.$f0.$f1">
+<tt class="descname">cvt.w.s</tt><big>(</big><em>$f0</em>, <em>$f1</em><big>)</big><a class="headerlink" href="#mips.cvt.w.s.$f0.$f1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert from single precision to word : Set $f0 to 32-bit integer equivalent of single precision value in $f1</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f0</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.div.$t1.$t2">
+<tt class="descname">div</tt><big>(</big><em>$t1</em>, <em>$t2</em><big>)</big><a class="headerlink" href="#mips.div.$t1.$t2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Division with overflow : Divide $t1 by $t2 then set LO to quotient and HI to remainder (use mfhi to access HI, mflo to access LO)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.div.d.$f2.$f4.$f6">
+<tt class="descname">div.d</tt><big>(</big><em>$f2</em>, <em>$f4</em>, <em>$f6</em><big>)</big><a class="headerlink" href="#mips.div.d.$f2.$f4.$f6" title="Permalink to this definition">¶</a></dt>
+<dd><p>Floating point division double precision : Set $f2 to double-precision floating point value of $f4 divided by $f6</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f2</strong> &#8211; Parameter 0</li>
+<li><strong>$f4</strong> &#8211; Parameter 1</li>
+<li><strong>$f6</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.div.s.$f0.$f1.$f3">
+<tt class="descname">div.s</tt><big>(</big><em>$f0</em>, <em>$f1</em>, <em>$f3</em><big>)</big><a class="headerlink" href="#mips.div.s.$f0.$f1.$f3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Floating point division single precision : Set $f0 to single-precision floating point value of $f1 divided by $f3</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f0</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+<li><strong>$f3</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.divu.$t1.$t2">
+<tt class="descname">divu</tt><big>(</big><em>$t1</em>, <em>$t2</em><big>)</big><a class="headerlink" href="#mips.divu.$t1.$t2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Division unsigned without overflow : Divide unsigned $t1 by $t2 then set LO to quotient and HI to remainder (use mfhi to access HI, mflo to access LO)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.eret">
+<tt class="descname">eret</tt><a class="headerlink" href="#mips.eret" title="Permalink to this definition">¶</a></dt>
+<dd><p>Exception return : Set Program Counter to Coprocessor 0 EPC register value, set Coprocessor Status register bit 1 (exception level) to zero</p>
+<p>:param : Parameter 0</p>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.floor.w.d.$f1.$f2">
+<tt class="descname">floor.w.d</tt><big>(</big><em>$f1</em>, <em>$f2</em><big>)</big><a class="headerlink" href="#mips.floor.w.d.$f1.$f2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Floor double precision to word : Set $f1 to 32-bit integer floor of double-precision float in $f2</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f1</strong> &#8211; Parameter 0</li>
+<li><strong>$f2</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.floor.w.s.$f0.$f1">
+<tt class="descname">floor.w.s</tt><big>(</big><em>$f0</em>, <em>$f1</em><big>)</big><a class="headerlink" href="#mips.floor.w.s.$f0.$f1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Floor single precision to word : Set $f0 to 32-bit integer floor of single-precision float in $f1</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f0</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.j.target">
+<tt class="descname">j</tt><big>(</big><em>target</em><big>)</big><a class="headerlink" href="#mips.j.target" title="Permalink to this definition">¶</a></dt>
+<dd><p>Jump unconditionally : Jump to statement at target address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>target</strong> &#8211; Parameter 0</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.jal.target">
+<tt class="descname">jal</tt><big>(</big><em>target</em><big>)</big><a class="headerlink" href="#mips.jal.target" title="Permalink to this definition">¶</a></dt>
+<dd><p>Jump and link : Set $ra to Program Counter (return address) then jump to statement at target address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>target</strong> &#8211; Parameter 0</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.jalr.$t1">
+<tt class="descname">jalr</tt><big>(</big><em>$t1</em><big>)</big><a class="headerlink" href="#mips.jalr.$t1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Jump and link register : Set $ra to Program Counter (return address) then jump to statement whose address is in $t1</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.jalr.$t1.$t2">
+<tt class="descname">jalr</tt><big>(</big><em>$t1</em>, <em>$t2</em><big>)</big><a class="headerlink" href="#mips.jalr.$t1.$t2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Jump and link register : Set $t1 to Program Counter (return address) then jump to statement whose address is in $t2</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.jr.$t1">
+<tt class="descname">jr</tt><big>(</big><em>$t1</em><big>)</big><a class="headerlink" href="#mips.jr.$t1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Jump register unconditionally : Jump to statement whose address is in $t1</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.lb.$t1.-100($t2)">
+<tt class="descname">lb</tt><big>(</big><em>$t1</em>, <em>-100($t2)</em><big>)</big><a class="headerlink" href="#mips.lb.$t1.-100($t2)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load byte : Set $t1 to sign-extended 8-bit value from effective memory byte address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>-100($t2)</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.lbu.$t1.-100($t2)">
+<tt class="descname">lbu</tt><big>(</big><em>$t1</em>, <em>-100($t2)</em><big>)</big><a class="headerlink" href="#mips.lbu.$t1.-100($t2)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load byte unsigned : Set $t1 to zero-extended 8-bit value from effective memory byte address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>-100($t2)</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.ldc1.$f2.-100($t2)">
+<tt class="descname">ldc1</tt><big>(</big><em>$f2</em>, <em>-100($t2)</em><big>)</big><a class="headerlink" href="#mips.ldc1.$f2.-100($t2)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load double word Coprocessor 1 (FPU)) : Set $f2 to 64-bit value from effective memory doubleword address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f2</strong> &#8211; Parameter 0</li>
+<li><strong>-100($t2)</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.lh.$t1.-100($t2)">
+<tt class="descname">lh</tt><big>(</big><em>$t1</em>, <em>-100($t2)</em><big>)</big><a class="headerlink" href="#mips.lh.$t1.-100($t2)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load halfword : Set $t1 to sign-extended 16-bit value from effective memory halfword address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>-100($t2)</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.lhu.$t1.-100($t2)">
+<tt class="descname">lhu</tt><big>(</big><em>$t1</em>, <em>-100($t2)</em><big>)</big><a class="headerlink" href="#mips.lhu.$t1.-100($t2)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load halfword unsigned : Set $t1 to zero-extended 16-bit value from effective memory halfword address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>-100($t2)</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.ll.$t1.-100($t2)">
+<tt class="descname">ll</tt><big>(</big><em>$t1</em>, <em>-100($t2)</em><big>)</big><a class="headerlink" href="#mips.ll.$t1.-100($t2)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load linked : Paired with Store Conditional (sc) to perform atomic read-modify-write.  Treated as equivalent to Load Word (lw) because MARS does not simulate multiple processors.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>-100($t2)</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.lui.$t1.100">
+<tt class="descname">lui</tt><big>(</big><em>$t1</em>, <em>100</em><big>)</big><a class="headerlink" href="#mips.lui.$t1.100" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load upper immediate : Set high-order 16 bits of $t1 to 16-bit immediate and low-order 16 bits to 0</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>100</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.lw.$t1.-100($t2)">
+<tt class="descname">lw</tt><big>(</big><em>$t1</em>, <em>-100($t2)</em><big>)</big><a class="headerlink" href="#mips.lw.$t1.-100($t2)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load word : Set $t1 to contents of effective memory word address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>-100($t2)</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.lwc1.$f1.-100($t2)">
+<tt class="descname">lwc1</tt><big>(</big><em>$f1</em>, <em>-100($t2)</em><big>)</big><a class="headerlink" href="#mips.lwc1.$f1.-100($t2)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load word into Coprocessor 1 (FPU) : Set $f1 to 32-bit value from effective memory word address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f1</strong> &#8211; Parameter 0</li>
+<li><strong>-100($t2)</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.lwl.$t1.-100($t2)">
+<tt class="descname">lwl</tt><big>(</big><em>$t1</em>, <em>-100($t2)</em><big>)</big><a class="headerlink" href="#mips.lwl.$t1.-100($t2)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load word left : Load from 1 to 4 bytes left-justified into $t1, starting with effective memory byte address and continuing through the low-order byte of its word</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>-100($t2)</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.lwr.$t1.-100($t2)">
+<tt class="descname">lwr</tt><big>(</big><em>$t1</em>, <em>-100($t2)</em><big>)</big><a class="headerlink" href="#mips.lwr.$t1.-100($t2)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load word right : Load from 1 to 4 bytes right-justified into $t1, starting with effective memory byte address and continuing through the high-order byte of its word</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>-100($t2)</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.madd.$t1.$t2">
+<tt class="descname">madd</tt><big>(</big><em>$t1</em>, <em>$t2</em><big>)</big><a class="headerlink" href="#mips.madd.$t1.$t2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Multiply add : Multiply $t1 by $t2 then increment HI by high-order 32 bits of product, increment LO by low-order 32 bits of product (use mfhi to access HI, mflo to access LO)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.maddu.$t1.$t2">
+<tt class="descname">maddu</tt><big>(</big><em>$t1</em>, <em>$t2</em><big>)</big><a class="headerlink" href="#mips.maddu.$t1.$t2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Multiply add unsigned : Multiply $t1 by $t2 then increment HI by high-order 32 bits of product, increment LO by low-order 32 bits of product, unsigned (use mfhi to access HI, mflo to access LO)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.mfc0.$t1.$8">
+<tt class="descname">mfc0</tt><big>(</big><em>$t1</em>, <em>$8</em><big>)</big><a class="headerlink" href="#mips.mfc0.$t1.$8" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move from Coprocessor 0 : Set $t1 to the value stored in Coprocessor 0 register $8</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$8</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.mfc1.$t1.$f1">
+<tt class="descname">mfc1</tt><big>(</big><em>$t1</em>, <em>$f1</em><big>)</big><a class="headerlink" href="#mips.mfc1.$t1.$f1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move from Coprocessor 1 (FPU) : Set $t1 to value in Coprocessor 1 register $f1</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.mfhi.$t1">
+<tt class="descname">mfhi</tt><big>(</big><em>$t1</em><big>)</big><a class="headerlink" href="#mips.mfhi.$t1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move from HI register : Set $t1 to contents of HI (see multiply and divide operations)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.mflo.$t1">
+<tt class="descname">mflo</tt><big>(</big><em>$t1</em><big>)</big><a class="headerlink" href="#mips.mflo.$t1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move from LO register : Set $t1 to contents of LO (see multiply and divide operations)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.mov.d.$f2.$f4">
+<tt class="descname">mov.d</tt><big>(</big><em>$f2</em>, <em>$f4</em><big>)</big><a class="headerlink" href="#mips.mov.d.$f2.$f4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move floating point double precision : Set double precision $f2 to double precision value in $f4</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f2</strong> &#8211; Parameter 0</li>
+<li><strong>$f4</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.mov.s.$f0.$f1">
+<tt class="descname">mov.s</tt><big>(</big><em>$f0</em>, <em>$f1</em><big>)</big><a class="headerlink" href="#mips.mov.s.$f0.$f1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move floating point single precision : Set single precision $f0 to single precision value in $f1</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f0</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.movf.$t1.$t2">
+<tt class="descname">movf</tt><big>(</big><em>$t1</em>, <em>$t2</em><big>)</big><a class="headerlink" href="#mips.movf.$t1.$t2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move if FP condition flag 0 false : Set $t1 to $t2 if FPU (Coprocessor 1) condition flag 0 is false (zero)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.movf.$t1.$t2.1">
+<tt class="descname">movf</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>1</em><big>)</big><a class="headerlink" href="#mips.movf.$t1.$t2.1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move if specified FP condition flag false : Set $t1 to $t2 if FPU (Coprocessor 1) condition flag specified by the immediate is false (zero)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>1</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.movf.d.$f2.$f4">
+<tt class="descname">movf.d</tt><big>(</big><em>$f2</em>, <em>$f4</em><big>)</big><a class="headerlink" href="#mips.movf.d.$f2.$f4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move floating point double precision : If condition flag 0 false, set double precision $f2 to double precision value in $f4</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f2</strong> &#8211; Parameter 0</li>
+<li><strong>$f4</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.movf.d.$f2.$f4.1">
+<tt class="descname">movf.d</tt><big>(</big><em>$f2</em>, <em>$f4</em>, <em>1</em><big>)</big><a class="headerlink" href="#mips.movf.d.$f2.$f4.1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move floating point double precision : If condition flag specified by immediate is false, set double precision $f2 to double precision value in $f4</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f2</strong> &#8211; Parameter 0</li>
+<li><strong>$f4</strong> &#8211; Parameter 1</li>
+<li><strong>1</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.movf.s.$f0.$f1">
+<tt class="descname">movf.s</tt><big>(</big><em>$f0</em>, <em>$f1</em><big>)</big><a class="headerlink" href="#mips.movf.s.$f0.$f1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move floating point single precision : If condition flag 0 is false, set single precision $f0 to single precision value in $f1</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f0</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.movf.s.$f0.$f1.1">
+<tt class="descname">movf.s</tt><big>(</big><em>$f0</em>, <em>$f1</em>, <em>1</em><big>)</big><a class="headerlink" href="#mips.movf.s.$f0.$f1.1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move floating point single precision : If condition flag specified by immediate is false, set single precision $f0 to single precision value in $f1e</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f0</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+<li><strong>1</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.movn.$t1.$t2.$t3">
+<tt class="descname">movn</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>$t3</em><big>)</big><a class="headerlink" href="#mips.movn.$t1.$t2.$t3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move conditional not zero : Set $t1 to $t2 if $t3 is not zero</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>$t3</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.movn.d.$f2.$f4.$t3">
+<tt class="descname">movn.d</tt><big>(</big><em>$f2</em>, <em>$f4</em>, <em>$t3</em><big>)</big><a class="headerlink" href="#mips.movn.d.$f2.$f4.$t3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move floating point double precision : If $t3 is not zero, set double precision $f2 to double precision value in $f4</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f2</strong> &#8211; Parameter 0</li>
+<li><strong>$f4</strong> &#8211; Parameter 1</li>
+<li><strong>$t3</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.movn.s.$f0.$f1.$t3">
+<tt class="descname">movn.s</tt><big>(</big><em>$f0</em>, <em>$f1</em>, <em>$t3</em><big>)</big><a class="headerlink" href="#mips.movn.s.$f0.$f1.$t3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move floating point single precision : If $t3 is not zero, set single precision $f0 to single precision value in $f1</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f0</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+<li><strong>$t3</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.movt.$t1.$t2">
+<tt class="descname">movt</tt><big>(</big><em>$t1</em>, <em>$t2</em><big>)</big><a class="headerlink" href="#mips.movt.$t1.$t2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move if FP condition flag 0 true : Set $t1 to $t2 if FPU (Coprocessor 1) condition flag 0 is true (one)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.movt.$t1.$t2.1">
+<tt class="descname">movt</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>1</em><big>)</big><a class="headerlink" href="#mips.movt.$t1.$t2.1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move if specfied FP condition flag true : Set $t1 to $t2 if FPU (Coprocessor 1) condition flag specified by the immediate is true (one)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>1</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.movt.d.$f2.$f4">
+<tt class="descname">movt.d</tt><big>(</big><em>$f2</em>, <em>$f4</em><big>)</big><a class="headerlink" href="#mips.movt.d.$f2.$f4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move floating point double precision : If condition flag 0 true, set double precision $f2 to double precision value in $f4</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f2</strong> &#8211; Parameter 0</li>
+<li><strong>$f4</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.movt.d.$f2.$f4.1">
+<tt class="descname">movt.d</tt><big>(</big><em>$f2</em>, <em>$f4</em>, <em>1</em><big>)</big><a class="headerlink" href="#mips.movt.d.$f2.$f4.1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move floating point double precision : If condition flag specified by immediate is true, set double precision $f2 to double precision value in $f4e</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f2</strong> &#8211; Parameter 0</li>
+<li><strong>$f4</strong> &#8211; Parameter 1</li>
+<li><strong>1</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.movt.s.$f0.$f1">
+<tt class="descname">movt.s</tt><big>(</big><em>$f0</em>, <em>$f1</em><big>)</big><a class="headerlink" href="#mips.movt.s.$f0.$f1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move floating point single precision : If condition flag 0 is true, set single precision $f0 to single precision value in $f1e</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f0</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.movt.s.$f0.$f1.1">
+<tt class="descname">movt.s</tt><big>(</big><em>$f0</em>, <em>$f1</em>, <em>1</em><big>)</big><a class="headerlink" href="#mips.movt.s.$f0.$f1.1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move floating point single precision : If condition flag specified by immediate is true, set single precision $f0 to single precision value in $f1e</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f0</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+<li><strong>1</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.movz.$t1.$t2.$t3">
+<tt class="descname">movz</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>$t3</em><big>)</big><a class="headerlink" href="#mips.movz.$t1.$t2.$t3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move conditional zero : Set $t1 to $t2 if $t3 is zero</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>$t3</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.movz.d.$f2.$f4.$t3">
+<tt class="descname">movz.d</tt><big>(</big><em>$f2</em>, <em>$f4</em>, <em>$t3</em><big>)</big><a class="headerlink" href="#mips.movz.d.$f2.$f4.$t3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move floating point double precision : If $t3 is zero, set double precision $f2 to double precision value in $f4</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f2</strong> &#8211; Parameter 0</li>
+<li><strong>$f4</strong> &#8211; Parameter 1</li>
+<li><strong>$t3</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.movz.s.$f0.$f1.$t3">
+<tt class="descname">movz.s</tt><big>(</big><em>$f0</em>, <em>$f1</em>, <em>$t3</em><big>)</big><a class="headerlink" href="#mips.movz.s.$f0.$f1.$t3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move floating point single precision : If $t3 is zero, set single precision $f0 to single precision value in $f1</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f0</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+<li><strong>$t3</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.msub.$t1.$t2">
+<tt class="descname">msub</tt><big>(</big><em>$t1</em>, <em>$t2</em><big>)</big><a class="headerlink" href="#mips.msub.$t1.$t2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Multiply subtract : Multiply $t1 by $t2 then decrement HI by high-order 32 bits of product, decrement LO by low-order 32 bits of product (use mfhi to access HI, mflo to access LO)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.msubu.$t1.$t2">
+<tt class="descname">msubu</tt><big>(</big><em>$t1</em>, <em>$t2</em><big>)</big><a class="headerlink" href="#mips.msubu.$t1.$t2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Multiply subtract unsigned : Multiply $t1 by $t2 then decrement HI by high-order 32 bits of product, decement LO by low-order 32 bits of product, unsigned (use mfhi to access HI, mflo to access LO)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.mtc0.$t1.$8">
+<tt class="descname">mtc0</tt><big>(</big><em>$t1</em>, <em>$8</em><big>)</big><a class="headerlink" href="#mips.mtc0.$t1.$8" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move to Coprocessor 0 : Set Coprocessor 0 register $8 to value stored in $t1</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$8</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.mtc1.$t1.$f1">
+<tt class="descname">mtc1</tt><big>(</big><em>$t1</em>, <em>$f1</em><big>)</big><a class="headerlink" href="#mips.mtc1.$t1.$f1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move to Coprocessor 1 (FPU) : Set Coprocessor 1 register $f1 to value in $t1</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.mthi.$t1">
+<tt class="descname">mthi</tt><big>(</big><em>$t1</em><big>)</big><a class="headerlink" href="#mips.mthi.$t1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move to HI registerr : Set HI to contents of $t1 (see multiply and divide operations)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.mtlo.$t1">
+<tt class="descname">mtlo</tt><big>(</big><em>$t1</em><big>)</big><a class="headerlink" href="#mips.mtlo.$t1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move to LO register : Set LO to contents of $t1 (see multiply and divide operations)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.mul.$t1.$t2.$t3">
+<tt class="descname">mul</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>$t3</em><big>)</big><a class="headerlink" href="#mips.mul.$t1.$t2.$t3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Multiplication without overflow  : Set HI to high-order 32 bits, LO and $t1 to low-order 32 bits of the product of $t2 and $t3 (use mfhi to access HI, mflo to access LO)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>$t3</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.mul.d.$f2.$f4.$f6">
+<tt class="descname">mul.d</tt><big>(</big><em>$f2</em>, <em>$f4</em>, <em>$f6</em><big>)</big><a class="headerlink" href="#mips.mul.d.$f2.$f4.$f6" title="Permalink to this definition">¶</a></dt>
+<dd><p>Floating point multiplication double precision : Set $f2 to double-precision floating point value of $f4 times $f6</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f2</strong> &#8211; Parameter 0</li>
+<li><strong>$f4</strong> &#8211; Parameter 1</li>
+<li><strong>$f6</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.mul.s.$f0.$f1.$f3">
+<tt class="descname">mul.s</tt><big>(</big><em>$f0</em>, <em>$f1</em>, <em>$f3</em><big>)</big><a class="headerlink" href="#mips.mul.s.$f0.$f1.$f3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Floating point multiplication single precision : Set $f0 to single-precision floating point value of $f1 times $f3</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f0</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+<li><strong>$f3</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.mult.$t1.$t2">
+<tt class="descname">mult</tt><big>(</big><em>$t1</em>, <em>$t2</em><big>)</big><a class="headerlink" href="#mips.mult.$t1.$t2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Multiplication : Set hi to high-order 32 bits, lo to low-order 32 bits of the product of $t1 and $t2 (use mfhi to access hi, mflo to access lo)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.multu.$t1.$t2">
+<tt class="descname">multu</tt><big>(</big><em>$t1</em>, <em>$t2</em><big>)</big><a class="headerlink" href="#mips.multu.$t1.$t2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Multiplication unsigned : Set HI to high-order 32 bits, LO to low-order 32 bits of the product of unsigned $t1 and $t2 (use mfhi to access HI, mflo to access LO)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.neg.d.$f2.$f4">
+<tt class="descname">neg.d</tt><big>(</big><em>$f2</em>, <em>$f4</em><big>)</big><a class="headerlink" href="#mips.neg.d.$f2.$f4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Floating point negate double precision : Set double precision $f2 to negation of double precision value in $f4</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f2</strong> &#8211; Parameter 0</li>
+<li><strong>$f4</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.neg.s.$f0.$f1">
+<tt class="descname">neg.s</tt><big>(</big><em>$f0</em>, <em>$f1</em><big>)</big><a class="headerlink" href="#mips.neg.s.$f0.$f1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Floating point negate single precision : Set single precision $f0 to negation of single precision value in $f1</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f0</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.nop">
+<tt class="descname">nop</tt><a class="headerlink" href="#mips.nop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Null operation : machine code is all zeroes</p>
+<p>:param : Parameter 0</p>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.nor.$t1.$t2.$t3">
+<tt class="descname">nor</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>$t3</em><big>)</big><a class="headerlink" href="#mips.nor.$t1.$t2.$t3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bitwise NOR : Set $t1 to bitwise NOR of $t2 and $t3</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>$t3</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.or.$t1.$t2.$t3">
+<tt class="descname">or</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>$t3</em><big>)</big><a class="headerlink" href="#mips.or.$t1.$t2.$t3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bitwise OR : Set $t1 to bitwise OR of $t2 and $t3</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>$t3</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.ori.$t1.$t2.100">
+<tt class="descname">ori</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>100</em><big>)</big><a class="headerlink" href="#mips.ori.$t1.$t2.100" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bitwise OR immediate : Set $t1 to bitwise OR of $t2 and zero-extended 16-bit immediate</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>100</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.round.w.d.$f1.$f2">
+<tt class="descname">round.w.d</tt><big>(</big><em>$f1</em>, <em>$f2</em><big>)</big><a class="headerlink" href="#mips.round.w.d.$f1.$f2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Round double precision to word : Set $f1 to 32-bit integer round of double-precision float in $f2</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f1</strong> &#8211; Parameter 0</li>
+<li><strong>$f2</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.round.w.s.$f0.$f1">
+<tt class="descname">round.w.s</tt><big>(</big><em>$f0</em>, <em>$f1</em><big>)</big><a class="headerlink" href="#mips.round.w.s.$f0.$f1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Round single precision to word : Set $f0 to 32-bit integer round of single-precision float in $f1</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f0</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.sb.$t1.-100($t2)">
+<tt class="descname">sb</tt><big>(</big><em>$t1</em>, <em>-100($t2)</em><big>)</big><a class="headerlink" href="#mips.sb.$t1.-100($t2)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Store byte : Store the low-order 8 bits of $t1 into the effective memory byte address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>-100($t2)</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.sc.$t1.-100($t2)">
+<tt class="descname">sc</tt><big>(</big><em>$t1</em>, <em>-100($t2)</em><big>)</big><a class="headerlink" href="#mips.sc.$t1.-100($t2)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Store conditional : Paired with Load Linked (ll) to perform atomic read-modify-write.  Stores $t1 value into effective address, then sets $t1 to 1 for success.  Always succeeds because MARS does not simulate multiple processors.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>-100($t2)</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.sdc1.$f2.-100($t2)">
+<tt class="descname">sdc1</tt><big>(</big><em>$f2</em>, <em>-100($t2)</em><big>)</big><a class="headerlink" href="#mips.sdc1.$f2.-100($t2)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Store double word from Coprocessor 1 (FPU)) : Store 64 bit value in $f2 to effective memory doubleword address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f2</strong> &#8211; Parameter 0</li>
+<li><strong>-100($t2)</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.sh.$t1.-100($t2)">
+<tt class="descname">sh</tt><big>(</big><em>$t1</em>, <em>-100($t2)</em><big>)</big><a class="headerlink" href="#mips.sh.$t1.-100($t2)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Store halfword : Store the low-order 16 bits of $t1 into the effective memory halfword address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>-100($t2)</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.sll.$t1.$t2.10">
+<tt class="descname">sll</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>10</em><big>)</big><a class="headerlink" href="#mips.sll.$t1.$t2.10" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shift left logical : Set $t1 to result of shifting $t2 left by number of bits specified by immediate</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>10</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.sllv.$t1.$t2.$t3">
+<tt class="descname">sllv</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>$t3</em><big>)</big><a class="headerlink" href="#mips.sllv.$t1.$t2.$t3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shift left logical variable : Set $t1 to result of shifting $t2 left by number of bits specified by value in low-order 5 bits of $t3</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>$t3</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.slt.$t1.$t2.$t3">
+<tt class="descname">slt</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>$t3</em><big>)</big><a class="headerlink" href="#mips.slt.$t1.$t2.$t3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set less than : If $t2 is less than $t3, then set $t1 to 1 else set $t1 to 0</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>$t3</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.slti.$t1.$t2.-100">
+<tt class="descname">slti</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>-100</em><big>)</big><a class="headerlink" href="#mips.slti.$t1.$t2.-100" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set less than immediate : If $t2 is less than sign-extended 16-bit immediate, then set $t1 to 1 else set $t1 to 0</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>-100</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.sltiu.$t1.$t2.-100">
+<tt class="descname">sltiu</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>-100</em><big>)</big><a class="headerlink" href="#mips.sltiu.$t1.$t2.-100" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set less than immediate unsigned : If $t2 is less than  sign-extended 16-bit immediate using unsigned comparison, then set $t1 to 1 else set $t1 to 0</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>-100</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.sltu.$t1.$t2.$t3">
+<tt class="descname">sltu</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>$t3</em><big>)</big><a class="headerlink" href="#mips.sltu.$t1.$t2.$t3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set less than unsigned : If $t2 is less than $t3 using unsigned comparision, then set $t1 to 1 else set $t1 to 0</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>$t3</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.sqrt.d.$f2.$f4">
+<tt class="descname">sqrt.d</tt><big>(</big><em>$f2</em>, <em>$f4</em><big>)</big><a class="headerlink" href="#mips.sqrt.d.$f2.$f4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Square root double precision : Set $f2 to double-precision floating point square root of $f4</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f2</strong> &#8211; Parameter 0</li>
+<li><strong>$f4</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.sqrt.s.$f0.$f1">
+<tt class="descname">sqrt.s</tt><big>(</big><em>$f0</em>, <em>$f1</em><big>)</big><a class="headerlink" href="#mips.sqrt.s.$f0.$f1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Square root single precision : Set $f0 to single-precision floating point square root of $f1</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f0</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.sra.$t1.$t2.10">
+<tt class="descname">sra</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>10</em><big>)</big><a class="headerlink" href="#mips.sra.$t1.$t2.10" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shift right arithmetic : Set $t1 to result of sign-extended shifting $t2 right by number of bits specified by immediate</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>10</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.srav.$t1.$t2.$t3">
+<tt class="descname">srav</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>$t3</em><big>)</big><a class="headerlink" href="#mips.srav.$t1.$t2.$t3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shift right arithmetic variable : Set $t1 to result of sign-extended shifting $t2 right by number of bits specified by value in low-order 5 bits of $t3</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>$t3</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.srl.$t1.$t2.10">
+<tt class="descname">srl</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>10</em><big>)</big><a class="headerlink" href="#mips.srl.$t1.$t2.10" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shift right logical : Set $t1 to result of shifting $t2 right by number of bits specified by immediate</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>10</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.srlv.$t1.$t2.$t3">
+<tt class="descname">srlv</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>$t3</em><big>)</big><a class="headerlink" href="#mips.srlv.$t1.$t2.$t3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shift right logical variable : Set $t1 to result of shifting $t2 right by number of bits specified by value in low-order 5 bits of $t3</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>$t3</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.sub.$t1.$t2.$t3">
+<tt class="descname">sub</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>$t3</em><big>)</big><a class="headerlink" href="#mips.sub.$t1.$t2.$t3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subtraction with overflow : set $t1 to ($t2 minus $t3)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>$t3</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.sub.d.$f2.$f4.$f6">
+<tt class="descname">sub.d</tt><big>(</big><em>$f2</em>, <em>$f4</em>, <em>$f6</em><big>)</big><a class="headerlink" href="#mips.sub.d.$f2.$f4.$f6" title="Permalink to this definition">¶</a></dt>
+<dd><p>Floating point subtraction double precision : Set $f2 to double-precision floating point value of $f4 minus $f6</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f2</strong> &#8211; Parameter 0</li>
+<li><strong>$f4</strong> &#8211; Parameter 1</li>
+<li><strong>$f6</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.sub.s.$f0.$f1.$f3">
+<tt class="descname">sub.s</tt><big>(</big><em>$f0</em>, <em>$f1</em>, <em>$f3</em><big>)</big><a class="headerlink" href="#mips.sub.s.$f0.$f1.$f3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Floating point subtraction single precision : Set $f0 to single-precision floating point value of $f1  minus $f3</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f0</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+<li><strong>$f3</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.subu.$t1.$t2.$t3">
+<tt class="descname">subu</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>$t3</em><big>)</big><a class="headerlink" href="#mips.subu.$t1.$t2.$t3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subtraction unsigned without overflow : set $t1 to ($t2 minus $t3), no overflow</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>$t3</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.sw.$t1.-100($t2)">
+<tt class="descname">sw</tt><big>(</big><em>$t1</em>, <em>-100($t2)</em><big>)</big><a class="headerlink" href="#mips.sw.$t1.-100($t2)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Store word : Store contents of $t1 into effective memory word address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>-100($t2)</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.swc1.$f1.-100($t2)">
+<tt class="descname">swc1</tt><big>(</big><em>$f1</em>, <em>-100($t2)</em><big>)</big><a class="headerlink" href="#mips.swc1.$f1.-100($t2)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Store word from Coprocesor 1 (FPU) : Store 32 bit value in $f1 to effective memory word address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f1</strong> &#8211; Parameter 0</li>
+<li><strong>-100($t2)</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.swl.$t1.-100($t2)">
+<tt class="descname">swl</tt><big>(</big><em>$t1</em>, <em>-100($t2)</em><big>)</big><a class="headerlink" href="#mips.swl.$t1.-100($t2)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Store word left : Store high-order 1 to 4 bytes of $t1 into memory, starting with effective byte address and continuing through the low-order byte of its word</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>-100($t2)</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.swr.$t1.-100($t2)">
+<tt class="descname">swr</tt><big>(</big><em>$t1</em>, <em>-100($t2)</em><big>)</big><a class="headerlink" href="#mips.swr.$t1.-100($t2)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Store word right : Store low-order 1 to 4 bytes of $t1 into memory, starting with high-order byte of word containing effective byte address and continuing through that byte address</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>-100($t2)</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.syscall">
+<tt class="descname">syscall</tt><a class="headerlink" href="#mips.syscall" title="Permalink to this definition">¶</a></dt>
+<dd><p>Issue a system call : Execute the system call specified by value in $v0</p>
+<p>:param : Parameter 0</p>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.teq.$t1.$t2">
+<tt class="descname">teq</tt><big>(</big><em>$t1</em>, <em>$t2</em><big>)</big><a class="headerlink" href="#mips.teq.$t1.$t2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap if equal : Trap if $t1 is equal to $t2</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.teqi.$t1.-100">
+<tt class="descname">teqi</tt><big>(</big><em>$t1</em>, <em>-100</em><big>)</big><a class="headerlink" href="#mips.teqi.$t1.-100" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap if equal to immediate : Trap if $t1 is equal to sign-extended 16 bit immediate</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>-100</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.tge.$t1.$t2">
+<tt class="descname">tge</tt><big>(</big><em>$t1</em>, <em>$t2</em><big>)</big><a class="headerlink" href="#mips.tge.$t1.$t2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap if greater or equal : Trap if $t1 is greater than or equal to $t2</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.tgei.$t1.-100">
+<tt class="descname">tgei</tt><big>(</big><em>$t1</em>, <em>-100</em><big>)</big><a class="headerlink" href="#mips.tgei.$t1.-100" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap if greater than or equal to immediate : Trap if $t1 greater than or equal to sign-extended 16 bit immediate</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>-100</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.tgeiu.$t1.-100">
+<tt class="descname">tgeiu</tt><big>(</big><em>$t1</em>, <em>-100</em><big>)</big><a class="headerlink" href="#mips.tgeiu.$t1.-100" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap if greater or equal to immediate unsigned : Trap if $t1 greater than or equal to sign-extended 16 bit immediate, unsigned comparison</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>-100</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.tgeu.$t1.$t2">
+<tt class="descname">tgeu</tt><big>(</big><em>$t1</em>, <em>$t2</em><big>)</big><a class="headerlink" href="#mips.tgeu.$t1.$t2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap if greater or equal unsigned : Trap if $t1 is greater than or equal to $t2 using unsigned comparision</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.tlt.$t1.$t2">
+<tt class="descname">tlt</tt><big>(</big><em>$t1</em>, <em>$t2</em><big>)</big><a class="headerlink" href="#mips.tlt.$t1.$t2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap if less than: Trap if $t1 less than $t2</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.tlti.$t1.-100">
+<tt class="descname">tlti</tt><big>(</big><em>$t1</em>, <em>-100</em><big>)</big><a class="headerlink" href="#mips.tlti.$t1.-100" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap if less than immediate : Trap if $t1 less than sign-extended 16-bit immediate</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>-100</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.tltiu.$t1.-100">
+<tt class="descname">tltiu</tt><big>(</big><em>$t1</em>, <em>-100</em><big>)</big><a class="headerlink" href="#mips.tltiu.$t1.-100" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap if less than immediate unsigned : Trap if $t1 less than sign-extended 16-bit immediate, unsigned comparison</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>-100</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.tltu.$t1.$t2">
+<tt class="descname">tltu</tt><big>(</big><em>$t1</em>, <em>$t2</em><big>)</big><a class="headerlink" href="#mips.tltu.$t1.$t2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap if less than unsigned : Trap if $t1 less than $t2, unsigned comparison</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.tne.$t1.$t2">
+<tt class="descname">tne</tt><big>(</big><em>$t1</em>, <em>$t2</em><big>)</big><a class="headerlink" href="#mips.tne.$t1.$t2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap if not equal : Trap if $t1 is not equal to $t2</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.tnei.$t1.-100">
+<tt class="descname">tnei</tt><big>(</big><em>$t1</em>, <em>-100</em><big>)</big><a class="headerlink" href="#mips.tnei.$t1.-100" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trap if not equal to immediate : Trap if $t1 is not equal to sign-extended 16 bit immediate</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>-100</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.trunc.w.d.$f1.$f2">
+<tt class="descname">trunc.w.d</tt><big>(</big><em>$f1</em>, <em>$f2</em><big>)</big><a class="headerlink" href="#mips.trunc.w.d.$f1.$f2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Truncate double precision to word : Set $f1 to 32-bit integer truncation of double-precision float in $f2</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f1</strong> &#8211; Parameter 0</li>
+<li><strong>$f2</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.trunc.w.s.$f0.$f1">
+<tt class="descname">trunc.w.s</tt><big>(</big><em>$f0</em>, <em>$f1</em><big>)</big><a class="headerlink" href="#mips.trunc.w.s.$f0.$f1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Truncate single precision to word : Set $f0 to 32-bit integer truncation of single-precision float in $f1</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$f0</strong> &#8211; Parameter 0</li>
+<li><strong>$f1</strong> &#8211; Parameter 1</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.xor.$t1.$t2.$t3">
+<tt class="descname">xor</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>$t3</em><big>)</big><a class="headerlink" href="#mips.xor.$t1.$t2.$t3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bitwise XOR (exclusive OR) : Set $t1 to bitwise XOR of $t2 and $t3</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>$t3</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="instructions">
+<dt id="mips.xori.$t1.$t2.100">
+<tt class="descname">xori</tt><big>(</big><em>$t1</em>, <em>$t2</em>, <em>100</em><big>)</big><a class="headerlink" href="#mips.xori.$t1.$t2.100" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bitwise XOR immediate : Set $t1 to bitwise XOR of $t2 and zero-extended 16-bit immediate</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$t1</strong> &#8211; Parameter 0</li>
+<li><strong>$t2</strong> &#8211; Parameter 1</li>
+<li><strong>100</strong> &#8211; Parameter 2</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">MIPS</a></h1>
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../instructions.html">Instructions</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">Basic Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pseudo.html">Pseudo Instructions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../directives.html">Directives</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../instructions.html">Instructions</a><ul>
+      <li>Previous: <a href="../instructions.html" title="previous chapter">Instructions</a></li>
+      <li>Next: <a href="pseudo.html" title="next chapter">Pseudo Instructions</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2015, Zeyi Fan.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.2.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.6</a>
+      
+      |
+      <a href="../_sources/instructions/basic.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
