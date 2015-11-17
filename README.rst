@@ -1,7 +1,7 @@
 MIPS Docset
 ===========
 
-`Download Latest Docset <>`_
+`Download Latest Docset <https://github.com/fanzeyi/MIPS.docset/releases/latest>`_
 
 This repository contains a MIPS docset for `Dash <https://kapeli.com/dash>`_. Feel free to contribute anything you think should be here.
 
